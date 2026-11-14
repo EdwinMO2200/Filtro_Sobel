@@ -60,10 +60,7 @@ def convertir_a_grises_promedio(imagen_rgb):
 
 
 def aplicar_padding_cero(matriz, alto, ancho, pad_size):
-    """
-    Añade un borde de ceros alrededor de la matriz para evitar
-    desbordamiento de índices en los bordes de la imagen.
-    """
+   
     alto_pad = alto + 2 * pad_size
     ancho_pad = ancho + 2 * pad_size
     matriz_pad = [[0 for _ in range(ancho_pad)] for _ in range(alto_pad)]
@@ -77,8 +74,8 @@ def aplicar_padding_cero(matriz, alto, ancho, pad_size):
 
 def aplicar_convolucion_sobel(matriz_gris, alto, ancho, kernel_x, kernel_y, tam_k):
     """
-    Aplica la convolución 2D de Sobel X y Sobel Y, calcula la magnitud
-    del gradiente y normaliza los resultados en el rango 0-255.
+    Aplica la convolución calcula la magnitud
+    del gradiente y normaliza los resultados.
     """
     pad_size = tam_k // 2
     matriz_pad = aplicar_padding_cero(matriz_gris, alto, ancho, pad_size)
@@ -123,7 +120,7 @@ def aplicar_convolucion_sobel(matriz_gris, alto, ancho, kernel_x, kernel_y, tam_
 
 def guardar_matriz_como_imagen(matriz, alto, ancho, nombre_salida):
     """
-    Convierte la matriz 2D procesada de nuevo a una imagen PIL y la guarda.
+    Convierte la matriz procesada de nuevo a una imagen y la guarda.
     """
     img_salida = Image.new("L", (ancho, alto))
     pixeles = img_salida.load()
