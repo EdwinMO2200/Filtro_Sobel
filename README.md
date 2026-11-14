@@ -1,4 +1,4 @@
-# Detección de Bordes con Filtro Sobel (Implementación Manual)
+# Detección de Bordes con Filtro Sobel
 
 Implementación desde cero en Python del operador Sobel para la detección de bordes en imágenes, desarrollada sin depender de funciones de filtrado de alto nivel. Este proyecto forma parte de una práctica de Procesamiento Digital.
 
