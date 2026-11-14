@@ -16,7 +16,7 @@ Implementación desde cero en Python del operador Sobel para la detección de bo
 
 | Imagen Original | Sobel $3 \times 3$ | Sobel $7 \times 7$ |
 | :---: | :---: | :---: |
-| ![Original](assets/original.png) | ![Sobel 3x3](assets/sobel_3x3.png) | ![Sobel 7x7](assets/sobel_7x7.png) |
+| ![Original](assets/Tringulo.jpg) | ![Sobel Grises](assets/1_Triangulo_grises.jpeg) | ![Sobel 3x3](assets/2_Triangulo_sobel_3x3.jpeg) |![Sobel 7x7](assets/3_Triangulo_sobel_7x7.jpeg) |
 
 ## Requisitos e Instalación
 
